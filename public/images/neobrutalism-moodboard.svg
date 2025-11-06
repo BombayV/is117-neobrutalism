@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <style>
+    .bg{fill:#f3f3f3}
+    .card{fill:#fff;stroke:#000;stroke-width:6}
+    .accent{fill:#e22b3b}
+    .muted{fill:#222}
+    .mono{font-family: Inter, Roboto, Arial, sans-serif; font-weight:700;}
+  </style>
+  <rect class="bg" width="1200" height="900"/>
+  <!-- left column large -->
+  <rect class="card" x="48" y="48" width="520" height="400" rx="6"/>
+  <rect x="72" y="72" width="120" height="120" fill="#2b2b2b"/>
+  <rect x="204" y="72" width="320" height="120" fill="#f6f1eb" stroke="#000" stroke-width="4"/>
+  <text x="72" y="220" class="mono" font-size="42">Bold type</text>
+
+  <!-- right column stack -->
+  <rect class="card" x="600" y="48" width="540" height="160" rx="6"/>
+  <rect class="card" x="600" y="232" width="260" height="216" rx="6"/>
+  <rect class="card" x="886" y="232" width="254" height="216" rx="6"/>
+
+  <!-- concrete sample -->
+  <rect x="72" y="472" width="520" height="320" fill="#cfcfcf" stroke="#000" stroke-width="6"/>
+  <text x="88" y="520" class="mono" font-size="22">Texture / material swatch</text>
+
+  <!-- palette -->
+  <rect x="600" y="472" width="120" height="120" fill="#111"/>
+  <rect x="736" y="472" width="120" height="120" fill="#e2e2e2"/>
+  <rect x="872" y="472" width="120" height="120" fill="#f7b81d"/>
+  <rect x="1008" y="472" width="120" height="120" fill="#e22b3b"/>
+
+  <text x="600" y="620" class="mono" font-size="18">High-contrast palette + accent</text>
+</svg>

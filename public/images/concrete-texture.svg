@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <filter id="grain"><feTurbulence baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="t"/><feColorMatrix type="saturate" values="0" in="t" result="g"/><feBlend in="SourceGraphic" in2="g" mode="multiply"/></filter>
+    <style><![CDATA[
+      .bg{fill:#cfcfcf}
+      .stain{fill:#bfbfbf;opacity:0.35}
+      .title{font-family: Inter, Roboto, Arial, sans-serif; font-weight:600; font-size:28px; fill:#111}
+    ]]></style>
+  </defs>
+  <rect class="bg" width="1200" height="400"/>
+  <g filter="url(#grain)">
+    <rect x="0" y="0" width="1200" height="400" fill="#bcbcbc" opacity="0.5"/>
+  </g>
+  <g opacity="0.25">
+    <ellipse class="stain" cx="200" cy="120" rx="180" ry="80"/>
+    <ellipse class="stain" cx="800" cy="220" rx="260" ry="110"/>
+  </g>
+  <text x="36" y="36" class="title">Concrete texture (SVG)</text>
+</svg>
