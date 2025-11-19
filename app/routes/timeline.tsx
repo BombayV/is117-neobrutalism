@@ -2,6 +2,7 @@ import type { Route } from "./+types/home";
 import TimelineComponent, {
   type TimelineEvent,
 } from "../components/ui/timeline";
+import HeroSection from "../components/hero-section";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -74,10 +75,14 @@ const events: TimelineEvent[] = [
 
 export default function Timeline() {
   return (
-    <main className="container mx-auto p-6 py-12">
-      <h1 className="text-4xl font-bold mb-4">Timeline</h1>
-
-      <TimelineComponent events={events} />
-    </main>
+    <>
+      <HeroSection
+        title="Timeline"
+        description="From Brutalist architecture through the digital neobrutal revival—a brief history."
+      />
+      <main className="container mx-auto p-6 py-12">
+        <TimelineComponent events={events} />
+      </main>
+    </>
   );
 }

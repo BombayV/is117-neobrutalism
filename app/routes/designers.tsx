@@ -1,6 +1,7 @@
 import type { Route } from "./+types/home";
 import PractitionerCard from "../components/ui/practitioner";
 import type { Practitioner } from "../components/ui/practitioner";
+import HeroSection from "../components/hero-section";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -71,18 +72,23 @@ export default function Designers() {
   ];
 
   return (
-    <main className="container mx-auto p-6 py-12">
-      <h1 className="text-4xl font-bold mb-4">Key practitioners</h1>
-      <p className="mb-4">
-        Short profiles and notable works. Replace these placeholders with real
-        practitioners and links as research continues.
-      </p>
+    <>
+      <HeroSection
+        title="Key practitioners"
+        description="Discover the designers and studios shaping the neobrutal aesthetic in digital design."
+      />
+      <main className="container mx-auto p-6 py-12">
+        <p className="mb-4">
+          Short profiles and notable works. Replace these placeholders with real
+          practitioners and links as research continues.
+        </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {practitioners.map((p) => (
-          <PractitionerCard key={p.name} practitioner={p} />
-        ))}
-      </div>
-    </main>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {practitioners.map((p) => (
+            <PractitionerCard key={p.name} practitioner={p} />
+          ))}
+        </div>
+      </main>
+    </>
   );
 }
