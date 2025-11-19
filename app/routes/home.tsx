@@ -12,7 +12,7 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <main className="container mx-auto p-6">
+    <main className="container mx-auto p-6 py-12">
       <h1 className="text-4xl font-bold mb-4">What defines Neobrutalism</h1>
       <p className="mb-4">
         Neobrutalism is a contemporary visual language that adapts Brutalist
@@ -109,13 +109,6 @@ export default function Home() {
 
       <section className="mt-8">
         <h2 className="text-2xl font-semibold">Resources</h2>
-        <p className="mt-2">
-          See the project research notes for more examples and references:{" "}
-          <a href="/" className="underline">
-            Research page
-          </a>
-          .
-        </p>
         <p className="mt-2">
           Explore the{" "}
           <a href="/designers" className="underline">

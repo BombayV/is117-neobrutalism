@@ -74,7 +74,7 @@ const events: TimelineEvent[] = [
 
 export default function Timeline() {
   return (
-    <main className="container mx-auto p-6">
+    <main className="container mx-auto p-6 py-12">
       <h1 className="text-4xl font-bold mb-4">Timeline</h1>
 
       <TimelineComponent events={events} />

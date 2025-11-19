@@ -14,8 +14,8 @@ export default function PractitionerCard({
   practitioner: Practitioner;
 }) {
   return (
-    <article className="p-4 border-2 border-black bg-white flex gap-4 items-start">
-      <div className="w-32 h-24 shrink-0 border-2 border-black overflow-hidden">
+    <article className="p-4 border-2 border-black bg-white flex flex-col md:flex-row gap-4 items-start">
+      <div className="w-full h-40 md:w-32 md:h-24 shrink-0 border-2 border-black overflow-hidden">
         {practitioner.image ? (
           // public/ is served from site root, so use absolute path
           // width/height left to CSS for responsiveness

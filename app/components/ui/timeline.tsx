@@ -16,7 +16,7 @@ export default function Timeline({ events }: { events: TimelineEvent[] }) {
           {events.map((e, idx) => (
             <li key={idx} className="relative px-6">
               <div className="mt-2 md:mt-0 p-4 border-2 border-black bg-white">
-                <div className="w-16 text-sm text-gray-700">{e.date}</div>
+                <div className="w-28 text-sm text-gray-700">{e.date}</div>
                 <h3 className="font-semibold text-lg">{e.title}</h3>
                 {e.description && (
                   <p className="mt-2 text-sm">{e.description}</p>

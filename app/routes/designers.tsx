@@ -71,7 +71,7 @@ export default function Designers() {
   ];
 
   return (
-    <main className="container mx-auto p-6">
+    <main className="container mx-auto p-6 py-12">
       <h1 className="text-4xl font-bold mb-4">Key practitioners</h1>
       <p className="mb-4">
         Short profiles and notable works. Replace these placeholders with real
