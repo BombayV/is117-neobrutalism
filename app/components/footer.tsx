@@ -34,11 +34,6 @@ export default function Footer() {
                   Timeline
                 </Link>
               </div>
-              <div>
-                <Link to="/research" className="underline hover:font-bold">
-                  Research
-                </Link>
-              </div>
             </nav>
           </div>
 
